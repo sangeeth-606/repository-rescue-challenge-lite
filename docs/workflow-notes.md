@@ -1,11 +1,25 @@
 # Workflow Notes
 
-Just push directly to main.
+## Branching Strategy
 
-Everyone commits whenever they want.
+All development happens on feature branches. Never push directly to `main`.
 
-No need for branches, code review slows us down.
+```bash
+git checkout -b feature/<description>
+```
 
-Commit messages can be whatever, nobody reads them.
+## Commit Guidelines
 
-Merge conflicts? Just force push.
+Write clear, descriptive commit messages. Each commit should represent a single logical change.
+
+## Code Review
+
+All changes require a code review before merging. No exceptions.
+
+## Merging
+
+Use pull requests to merge feature branches into `main`. Never force push.
+
+## Environment Configuration
+
+Keep `.env.example` and `config/environment.md` in sync before changing any environment values.
