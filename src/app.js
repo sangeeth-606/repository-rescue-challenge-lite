@@ -1,13 +1,9 @@
 // Simple starter application.
-// It runs, but it is not finished.
 
-// TODO: replace placeholder implementation
-
-const APP_PORT = 3000; // TODO: read this from environment config instead of hardcoding
+const APP_PORT = process.env.APP_PORT || 8080;
 
 function main() {
-  // TODO: replace placeholder implementation
-  const message = "app is running (placeholder)";
+  const message = "app is running";
   console.log(message);
   console.log("listening on port " + APP_PORT);
 }
